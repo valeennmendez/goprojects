@@ -1,0 +1,51 @@
+{{define "login"}}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="stylesheet" href="/static/css/login.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="info">
+          <h1>HIGA SAN JOSE <br>PERGAMINO</h1>
+      </div>
+
+      <form action="/login" method="post" class="form">
+        <div class="txt">
+          <h2>LOGIN</h2>
+          <p>¡Bienvenido al panel de control del sistema para el registro de pacientes!</p>
+        </div>
+        <div class="inputs">
+          <input type="email" class="box" id="email" name="email" placeholder="Ingrese el email" required>
+          <input type="password" class="box" id="password" name="password" placeholder="Ingrese la contraseña" required>
+        
+          <input class="btn" type="submit" value="LOGIN">
+
+          <a href="/registerpage">Crear cuenta empleado</a>
+
+          
+          <div class="error-mensage">
+            {{if .error}}
+            <p>{{.error}}</p>
+            {{end}}
+          </div>
+
+        </div>
+      </form>
+
+    </div>
+
+  </body>
+</html>
+{{end}}

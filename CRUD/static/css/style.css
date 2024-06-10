@@ -1,0 +1,39 @@
+.navbar{
+    background: rgb(16,82,96);
+    background: linear-gradient(90deg, rgb(19, 69, 81) 0%, rgba(2,51,89,1) 100%, rgba(2,0,36,1) 100%);
+    border-radius: 0 0 20px 20px;
+}
+
+.navbar a{
+    font-family: "Roboto Condensed";
+    color: white;
+    font-weight: 460;
+}
+
+.table tbody td{
+    vertical-align: middle;
+}
+
+.container.form{
+    border: 7px solid rgb(16,82,96);
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.container.tabla{
+    margin-top: 30px;
+}
+
+.container.tabla table{
+    display: inline-table;
+    align-items: center;
+    text-align: center;
+}
+
+.container.titles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

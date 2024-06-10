@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    background: linear-gradient(90deg, rgb(19, 69, 81) 0%, rgba(2,51,89,1) 100%, rgba(2,0,36,1) 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    height: 650px;
+    width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin: auto;
+    position: relative;
+    padding: 0;
+    border-radius: 15px;
+}
+
+.info{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url(hospital.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    border-radius: 15px 0 0 15px;
+    align-items: center;
+}
+
+.info h1{
+    margin: auto;
+    font-family: 'Roboto Condensed';
+    font-weight: 600;
+    color: white;
+    font-size: 2rem;
+}
+
+.form{
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.91);
+    border-radius: 0 15px 15px 0;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    font-family: 'Roboto Condensed',sans-serif;
+    font-weight: 600;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.inputs input{
+    margin: 15px;
+    width: calc(100%-30px);
+    border: none;
+    border-radius: 20px;
+    padding: 9px 15px 9px 15px;
+}
+
+.btn{
+    background: linear-gradient(90deg, rgb(19, 69, 81) 0%, rgba(2,51,89,1) 100%, rgba(2,0,36,1) 100%);
+    color: white;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background: none;
+    transition: 0.5s;
+
+}
+
+.inputs-register{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.inputs-register input{
+    margin: 15px;
+    width: calc(100%-30px);
+    border: none;
+    border-radius: 20px;
+    padding: 9px 15px 9px 15px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: .9rem;
+}
+
+.h2-register{
+    font-size: 1.5rem;
+}
+
+.error-mensage{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    text-align: center;
+    color: red;
+}
+
+@media(max-width:768px){
+    .info{
+        display: none;
+    }
+
+    .container{
+        align-items: center;
+        box-shadow: none;
+
+    }
+
+    .form{
+        height: 100%;
+        width: 80%;
+        margin: auto;
+        border-radius: 15px;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+        padding: 40px 0 40px 0;
+    }
+
+    .form .inputs{
+        font-size: 1rem;
+    }
+}
