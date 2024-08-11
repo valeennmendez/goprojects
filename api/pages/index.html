@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Acne Clinic</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/static/images/logo.jpeg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="lateral">
+        <div class="header">
+            <h5>Acme Clinic</h5>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="dashboard active"><a href="#"><i class="fa-solid fa-house"></i>Dashboard</a></li>
+                <li><a href="patients.html"><i class="fa-solid fa-user-group"></i>Patients</a></li>
+                <li><a href="appoinments.html"><i class="fa-regular fa-calendar"></i>Appointments</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contenedor">
+
+        <nav class="navbarra">
+            <div class="container-fluid">
+            </div>
+            <div class="title-navbar">
+              <div class="iconDiv">
+                <a href=""><img src="/static/images/icon.png" id="icon" alt=""></a>
+                <span role="button" id="closesesion" class="closesesion">Cerrar Sesion</span>
+              </div>
+              <h5>¡Bienvenido Valentin!</h5>
+            </div>
+        </nav>
+
+        <div class="contenido">
+            <h4>Dashboard</h4>
+        <div class="tarjetas">
+            <div class="cardd">
+            <div class="card-body">
+              <h5 class="card-title">Total Patients</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">The total number of patients in the clinic</h6>
+              <h2 id="totalPatients" class="totalPatients"></h2>
+            </div>
+        </div>
+        <div class="cardd">
+            <div class="card-body">
+              <h5 class="card-title">Appointments today</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">The number of appointments scheduled for today.</h6>
+              <h2 id="totalCitas"></h2>
+            </div>
+        </div>
+          <div class="cardd">
+            <div class="card-body">
+              <h5 class="card-title">Upcoming Surgeries</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">The number of scheduled surgeries in the next 7 days.</h6>
+              <h2>6</h2>
+            </div>
+        </div>
+        </div>
+        
+        <section class="tabla_back">
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>DNI</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--- Tabla---->
+                </tbody>
+            </table>
+        </section>
+      </div>
+        </div>  
+        
+
+  <script src="https://kit.fontawesome.com/a8b1c63967.js" crossorigin="anonymous"></script>
+  <script src="/static/js/script.js"></script>
+  </body>
+</html>

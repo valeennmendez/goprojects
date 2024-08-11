@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Input Date</title>
+</head>
+<body>
+    <form id="appointmentForm">
+        <label for="dayApp">Selecciona la fecha:</label>
+        <input type="date" id="dayApp" name="dayApp">
+        <button type="button" id="submitBtn">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById("submitBtn").addEventListener("click", function() {
+            const day = document.getElementById("dayApp").value;
+            console.log(day);
+        });
+    </script>
+</body>
+</html>

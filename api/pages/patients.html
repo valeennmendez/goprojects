@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="lateral">
+        <div class="header">
+            <h5>Acme Clinic</h5>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>Dashboard</a></li>
+                <li class="patients active"><a href="patients.html"><i class="fa-solid fa-user-group"></i>Patients</a></li>
+                <li><a href="appoinments.html"><i class="fa-regular fa-calendar"></i>Appointments</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contenedor">
+
+        <nav class="navbarra">
+            <div class="container-fluid">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" id="searchInput" placeholder="Search patients..." aria-label="Search">
+              </form>
+            </div>
+            <div class="title-navbar">
+                <div class="iconDiv">
+                  <a href=""><img src="/static/images/icon.png" id="icon" alt=""></a>
+                  <span id="closesesion" class="closesesion">Cerrar Sesion</span>
+                </div>
+                <h5>¡Bienvenido Valentin!</h5>
+              </div>
+          </nav>
+
+        <div class="contenido">
+            <div class="titles">
+                <h4>Patients</h4>
+                <a name="" id="openFormBtn" class="btn" href="#" role="button">Add Patients</a>
+        </div>  
+
+        <section class="tabla_back">
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>DNI</th>
+                        <th>Phone</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+    <div class="formulario" id="formContainer">
+        <div class="form-group">
+            <div class="titles-form">
+                <h5>Add New Patient</h5>
+                <a href="#" id="closeFormBtn"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+    
+            <form id="patientForm">
+                <div class="mb-3">
+                    <label class="labelTitle" for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter patient name">
+                </div>
+                <div class="mb-3">
+                    <label class="labelTitle" for="email">Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="Enter patient email">
+                </div>
+                <div class="mb-3">
+                    <label class="labelTitle" for="dni">DNI</label>
+                    <input type="text" class="form-control" id="dni" placeholder="Enter patient DNI">
+                </div>
+                <div class="mb-3">
+                    <label class="labelTitle" for="phone">Phone</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Enter patient Phone">
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+           
+
+    <div class="formularioEdit" id="formContainerEdit">
+        <div class="form-group">
+            <div class="titles-form">
+                <h5>Edit Patient</h5>
+                <a href="#" id="closeFormEditBtn"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+    
+            <form id="patientForm">
+                <div class="mb-3">
+                    <label class="labelTitle" for="name">Name</label>
+                    <input type="text" class="form-control" id="nameEdit" placeholder="Enter patient name">
+                </div>
+                <div class="mb-3">
+                    <label class="labelTitle" for="email">Email</label>
+                    <input type="text" class="form-control" id="emailEdit" placeholder="Enter patient email">
+                </div>
+                <div class="mb-3">
+                    <label class="labelTitle" for="dni">DNI</label>
+                    <input type="text" class="form-control" id="dniEdit" placeholder="Enter patient DNI">
+                </div>
+                <div class="mb-3">
+                    <label class="labelTitle" for="phone">Phone</label>
+                    <input type="text" class="form-control" id="phoneEdit" placeholder="Enter patient Phone">
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+            
+        
+    <div class="formularioAppoinment" id="formContainerAppoinment">
+        <div class="form-group">
+            <div class="titles-form">
+                <h5>Create appointment</h5>
+                <a href="#" id="closeFormAppBtn"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+    
+            <form id="AppForm">
+                <div class="mb-3">
+                    <label class="labelTitle" for="email">Email</label>
+                    <input type="text" class="form-control" id="emailApp" placeholder="Enter patient email" readonly>
+                </div>
+                <div class="mb-3">
+                    <label class="labelTitle" for="dni">DNI</label>
+                    <input type="text" class="form-control" id="dniApp" placeholder="Enter patient DNI" readonly>
+                </div>
+                <div class="mb-3">
+                    <label class="labelTitle" for="day">Day</label>
+                    <input type="date" class="form-control" id="dayApp">
+                </div>
+                <div class="mb-3">
+                    <label class="labelTitle" for="phone">Hour</label>
+                    <select class="form-control" name="" id="hourApp">
+
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="labelTitle" for="phone">Motivo de Cita</label>
+                    <input type="text" class="form-control" id="motivoApp">
+                </div>
+                <button type="submit" id="btnsumbit"  class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+            
+        
+    </div>
+
+        </div>  
+        
+
+    <script src="https://kit.fontawesome.com/a8b1c63967.js" crossorigin="anonymous"></script>
+    <script src="/static/js/patients.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    </body>
+</html>

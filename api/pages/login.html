@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/loginStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+    <div class="container-form">
+        <div class="titles-login">
+            <img src="/static/images/logo.jpeg" alt="">
+            <h3>Sign in to your account</h3>
+            <h5>Welcome to the system!</h5>
+        </div>
+        <form action="" id="formLogin" >
+          <div class="form-group">
+            <div class="mb-3">
+                  <label for="">User account</label>
+                  <input type="text" class="form-control" name="" id="email" placeholder="Email..."  autocomplete="username">
+            </div> 
+            <div class="mb-3">
+                  <label for="">Password</label>
+                  <input type="password" class="form-control" name="" id="password"  placeholder="Password..." autocomplete="current-password">
+            </div> 
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue">
+              Remember me
+            </label>
+          </div>
+          <div class="textos">
+            <button type="submit" class="btn" id="submitBtn">Sign in</button>
+            <h5 class="error" id="error">Email or Password incorrect.</h6>
+          </div>
+        </form>
+
+    </div>
+    </div>
+
+    <script src="/static/js/login.js"></script>
+</body>
+</html>

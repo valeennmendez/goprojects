@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="lateral">
+        <div class="header">
+            <h5>Acme Clinic</h5>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class=""><a href="index.html"><i class="fa-solid fa-house"></i>Dashboard</a></li>
+                <li><a href="patients.html"><i class="fa-solid fa-user-group"></i>Patients</a></li>
+                <li class="dashboard active"><a href="appoinments.html"><i class="fa-regular fa-calendar"></i>Appointments</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contenedor">
+      <nav class="navbarra">
+          <div class="container-fluid">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search patients..." aria-label="Search">
+            </form>
+          </div>
+          <div class="title-navbar">
+            <div class="iconDiv">
+              <a href=""><img src="/static/images/icon.png" id="icon" alt=""></a>
+              <span role="button" id="closesesion" class="closesesion">Cerrar Sesion</span>
+            </div>
+              <h5>¡Bienvenido Valentin!</h5>
+          </div>
+      </nav>
+
+      <div class="contenido">
+        <div class="titles">
+            <h4>Appointments</h4>
+            <a name="" id="openFormBtn" class="btn" href="#" role="button">Add Appointment</a>
+      </div>  
+
+      <section class="tabla_back">
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>Email</th>
+                    <th>DNI</th>
+                    <th>Date</th>
+                    <th>Hour</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </section>
+  
+    </div>
+
+
+
+
+  <script src="https://kit.fontawesome.com/a8b1c63967.js" crossorigin="anonymous"></script>
+  <script src="/static/js/appointment.js"></script>
+  </body>
+</html>
